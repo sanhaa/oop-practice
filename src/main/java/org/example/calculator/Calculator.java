@@ -11,10 +11,6 @@ public class Calculator {
         /**
          * TODO: operator에 따라 사칙연산 구현하기
          */
-        if(operator.equals("+")) return a+b;
-        else if(operator.equals("-")) return a-b;
-        else if(operator.equals("*")) return a*b;
-        else if(operator.equals("/")) return a/b;
 
         return 0;
     }
