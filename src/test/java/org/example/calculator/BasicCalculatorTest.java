@@ -18,8 +18,8 @@ import static org.junit.jupiter.params.provider.Arguments.arguments;
  * - 음수가 하나라도 있으면 IllegalArgument 예외를 발생시킨다.
  * - 나눗셈에서 0으로 나누려고 하는 경우 IllegalArgument 예외를 발생시킨다.
  */
-public class CalculatorTest {
-    Calculator calculator = new Calculator();
+public class BasicCalculatorTest {
+    AbstractCalculator calculator = new BasicCalculator();
 
     @DisplayName("덧셈 연산을 수행한다")
     @Test

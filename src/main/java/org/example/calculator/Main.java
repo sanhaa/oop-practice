@@ -8,9 +8,15 @@ public class Main {
 
         String operator = "+";
 
-        int result = Calculator.calculate(a, operator, b);
+        Calculator calculator = new Calculator();
+
+        int result = calculator.executeCalculate(a, operator, b);
 
         System.out.println("result = " + result);
+
+        AbstractCalculator newCalculator = new BasicCalculator();
+        System.out.println("result = " + newCalculator.executeCalculate(a, operator, b));
+
     }
 
 }
