@@ -9,6 +9,6 @@ public class AdditionOperator implements ArithmeticOperator {
 
     @Override
     public int calculate(int a, int b) {
-        return a+b;
+        return 0;
     }
 }

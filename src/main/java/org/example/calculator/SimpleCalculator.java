@@ -11,20 +11,16 @@ import java.util.List;
  */
 
 public class SimpleCalculator extends AbstractCalculator {
-    private static final List<ArithmeticOperator> arithmeticOperators = List.of(new AdditionOperator(), new SubtractionOperator());
+    private static final List<ArithmeticOperator> arithmeticOperators = List.of();
 
     @Override
     public int executeCalculate(int a, String operator, int b) {
-        // 1. 입력된 두 수 validation 검사
-        // 2. calculate 수행
-        // 사실 위의 두 기능을 따로 메소드로 분리하는게 좋지만..
-        if(numberValidation(a, b)) {
-            return arithmeticOperators.stream()
-                    .filter(arithmeticOperator -> arithmeticOperator.supports(operator))
-                    .map(arithmeticOperator -> arithmeticOperator.calculate(a, b))
-                    .findFirst()
-                    .orElseThrow(() -> new IllegalArgumentException("올바른 사칙연산이 아닙니다.(+, - 연산만 지원)"));
-        }
-        else throw new IllegalArgumentException("음수는 계산할 수 없습니다.");
+        /**
+         * TODO: 계산을 수행하는 코드를 작성합니다.
+         * 1. 입력된 두 수 validation 검사하고 필요시 IllegalArgumentException() 발생
+         *  2. calculate 수행하고 불가능한 사칙연산이 들어온 경우 IllegalArgumentException() 발생
+         * 사실 위의 두 기능을 따로 메소드로 분리하는게 좋지만..
+         */
+        return 0;
     }
 }

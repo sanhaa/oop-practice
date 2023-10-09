@@ -10,12 +10,11 @@ public abstract class AbstractCalculator {
 
     boolean numberValidation(int a, int b){
         /**
-         * a, b 두 수의 validation을 검사합니다.
+         * TODO: a, b 두 수의 validation을 검사하는 코드를 작성합니다.
          * - a, b 중 하나가 음수인 경우 false를 반환
          * - a, b 모두 0포함 양수인 경우 true를 반환
          */
-        if(a < 0 || b<0) return false;
-        else return true;
+        return true;
     }
 
     // abstract method: 자식 class에게 overriding 강요
